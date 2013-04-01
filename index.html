@@ -25,6 +25,7 @@
 <link rel="apple-touch-icon" href="../images/mobile/ios-fav.jpg" />
 <link media="only screen and (max-width:685px)" href="css/mobile.css" type= "text/css" rel="stylesheet" />
 <link media="screen and (min-width:686px)" href="css/style.css" type="text/css" rel="stylesheet" />
+<link media="screen, handheld" href="css/coscup.css?0401" rel="stylesheet" type="text/css" />
 
 <!--favicon-->
 <link type="image/x-icon" href="favicon.ico" rel="shortcut icon">
@@ -41,34 +42,83 @@
 </head>
 
 <body>
-<div class="logo"><a href="index.html">coscup2013</a></div>
-<div class="m_main"><img src="images/mobile/m_main.jpg" width="100%"/></div>
-<ul class="cfa">
-  <li><a href="mailto:sponsorship@coscup.org" target="_blank">Call for Sponsor</a></li>
-  <li><a href="http://registrano.com/events/coscup2013-cfp/" target="_blank">Call for Proposal</a></li>
-</ul>
-<!--div class="btn_open"><a href="#">OPNE照片大募集<span></span></a></div-->
-<ul class="sharing">
-  <li class="title">Follow Us!!<hr></li>
-  <li><a href="https://www.facebook.com/coscup"><span>facebook</span><img src="images/social_fb.png" width="16" height="16" align="absmiddle" /></a></li>
-  <li><a href="http://www.plurk.com/coscup"><span>Plurk</span><img src="images/social_plurk.png" width="16" height="16" align="absmiddle" /></a></li>
-  <li><a href="https://twitter.com/coscup"><span>twitter</span><img src="images/social_twitter.png" width="16" height="16" align="absmiddle" /></a></li>
-  <li><a href="http://blog.coscup.org"><span>Blog</span><img src="images/social_blog.png" width="16" height="16" align="absmiddle" /></a></li>
-</ul>
-<div class="clear"></div>
+<div id="mainpage" class="page current">
+  <div class="logo"><a href="index.html">coscup2013</a></div>
+  <div class="m_main"><img src="images/mobile/m_main.jpg" width="100%"/></div>
+  <ul class="cfa">
+    <li><a href="mailto:sponsorship@coscup.org" target="_blank">Call for Sponsor</a></li>
+    <li><a href="http://registrano.com/events/coscup2013-cfp/" target="_blank">Call for Proposal</a></li>
+  </ul>
+  <div id="btn_open"><a href="">OPNE照片大募集</a></div>
+  <ul class="sharing">
+    <li class="title">Follow Us!!<hr></li>
+    <li><a href="https://www.facebook.com/coscup"><span>facebook</span><img src="images/social_fb.png" width="16" height="16" align="absmiddle" /></a></li>
+    <li><a href="http://www.plurk.com/coscup"><span>Plurk</span><img src="images/social_plurk.png" width="16" height="16" align="absmiddle" /></a></li>
+    <li><a href="https://twitter.com/coscup"><span>twitter</span><img src="images/social_twitter.png" width="16" height="16" align="absmiddle" /></a></li>
+    <li><a href="http://blog.coscup.org"><span>Blog</span><img src="images/social_blog.png" width="16" height="16" align="absmiddle" /></a></li>
+  </ul>
+  <div class="clear"></div>
+</div>
+<div id="openwall" class="page next">
+  <div id="panel-container">
+    <div id="logo"><a href="http://coscup.org/2013/"></a></div>
+    <div id="panel"></div>
+    <div id="callforphoto">
+      <p class="title">OPEN 照片大募集 &raquo; </p>
+      <div class="content">
+        <hr>
+        <p>是的，就是這麼簡單，就像工作人員率先完成的O字母，你需要的只是拍張美美的照片，再加上一點有趣的點子或突發奇想的創意，還有”PEN”字母強力募集中! 快來加入我們~LET’S OPEN!</p>
+        <p>活動方式：下載字板後，手持字版拍照後寄到活動信箱(可自行加入創意，以不遮住字版為原則)，我們會把所有投稿者的照片組合成OPEN。</p>
+        <p>字版下載：<a href="">[按我下載]</a></p>
+        <p>活動信箱：<a href="mailto:maketing@coscup.org">maketing@coscup.org</a></p>
+        <p>照片規格：照片需為 JPEG 檔，尺寸為120pixel * 120pixel，檔案大小需為 2M 以內。</p>
+        <p>投稿時間：04 月 01 日（一）中午 12：00 ～ 04 月 30 日（二）中午12：00。</p>
+      </div>
+    </div>
+    <ul id="sharing">
+      <li class="title">Follow Us!<hr></li>
+      <li><a href="https://www.facebook.com/coscup"><img src="images/social_fb.png" /><span>facebook</span></a></li>
+      <li><a href="http://www.plurk.com/coscup"><img src="images/social_plurk.png" /><span>Plurk</span></a></li>
+      <li><a href="https://twitter.com/coscup"><img src="images/social_twitter.png" /><span>tiwtter</span></a></li>
+      <li><a href="http://blog.coscup.org"><img src="images/social_blog.png" /><span>Blog</span></a></li>
+    </ul>
+    <div id="btn_back"><a href="">HOME</a></div>
+    <div style="clear: both;"></div>
+  </div>
+</div>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.openwall.js"></script>
+<script type="text/javascript">
+jQuery(function ($) {
+  if (navigator.userAgent.match(/(Android|iPhone|iPod|iPad|IEMobile|B2G)/)) {
+    //XXX fallback plan?
+  }
 
+  var options = {
+    imageDir: 'photo/',
+    mobile: false
+  };
 
-<ul class="sponsor" style="display:none">
-	<li class="title">率先贊助<hr></li>
-	<li><img src="images/sponsor.png"  alt="sponsor" title="sponsor" /></li>
-  <li><img src="images/sponsor.png"  alt="sponsor" title="sponsor" /></li>
-  <li><img src="images/sponsor.png"  alt="sponsor" title="sponsor" /></li>
-  <li><img src="images/sponsor.png"  alt="sponsor" title="sponsor" /></li>
-  <li><img src="images/sponsor.png"  alt="sponsor" title="sponsor" /></li>
-  <li><img src="images/sponsor.png"  alt="sponsor" title="sponsor" /></li>
-  <li><img src="images/sponsor.png"  alt="sponsor" title="sponsor" /></li>
-  <li class="last"><a href="mailto:sponsorship@coscup.org">贊助徵求中,請洽銷售組</a></li>
-</ul>
+  var mq = window.matchMedia("(max-width: 360px)");
+  if (mq.matches)
+    options.mobile = true;
+  $('#panel').openWall(options);
 
+  $('#btn_open a').click(function(e) {
+    e.preventDefault();
+    console.log('testQQ');
+    $('#mainpage').removeClass('current').addClass('previous');
+    $('#openwall').removeClass('next').addClass('current');
+  });
+  $('#btn_back a').click(function(e) {
+    e.preventDefault();
+    console.log('testQQ2');
+    $('#openwall').removeClass('current').addClass('next');
+    $('#mainpage').removeClass('previous').addClass('current');
+  });
+
+});
+
+</script>
 </body>
 </html>

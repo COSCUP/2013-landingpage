@@ -1,0 +1,279 @@
+.page {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0;
+  overflow: hidden;
+  transform: translateX(+100%);
+  transition: transform .4s ease;
+}
+.page.previous {
+  transform: translateX(-100%);
+}
+.page.current {
+  transform: translateX(0);
+  overflow-y: scroll;
+}
+.page.next {
+  transform: translateX(+100%);
+}
+
+#openwall {
+  background: black;
+}
+
+#openwall ul,ol { 
+  list-style: none; 
+}
+#openwall.fallback {
+  background: url("fallback-bg.jpg") left top no-repeat black;
+  background-size: cover;
+  -moz-background-size: cover;
+}
+#openwall p {
+  margin: 0;
+  padding: 0;
+  font-family: "Myriad Pro", "Lucida Grande", Helvetica, Arial,
+    "Heiti TC", "Hiragino Kaku Gothic Pro", "Hiragino Sans GB", "Lihei Pro",
+    "文泉驛微米黑", "Droid Sans Fallback",
+    "新細明體", sans-serif !important;
+}
+#openwall a {
+  color: #369;
+}
+#openwall #logo a {
+  background: transparent url('../images/coscup.png') 0 0 no-repeat;
+  height: 33px;
+  width: 100%;
+  position: absolute;
+  text-indent: -9999px;
+  top: 5px;
+  z-index: 99;
+}
+
+#openwall li hr {
+  display: none;
+}
+
+#openwall #panel-container {
+  width: 1225px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#openwall #panel .letterBlock {
+  width: 306px;
+  display: inline-block;
+  line-height: 0;
+}
+
+#openwall #panel .thumbnail {
+  width: 50px;
+  opacity: 0.1;
+  margin-left: 1px;
+  margin-top: 1px;
+}
+
+#openwall #panel .default {
+  opacity: 0.4;
+}
+
+#openwall #panel .highlight {
+  opacity: 1.0;
+  border: none;
+}
+
+#openwall #panel img.highlight:hover {
+  -webkit-transform: scale(2.4);
+  -moz-transform: scale(2.4);
+  -ms-transform: scale(2.4);
+  -o-transform: scale(2.4);
+  z-index: 2;
+  outline: 2px solid white;
+}
+
+#openwall #callforphoto {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  width: 450px;
+  background: black;
+  padding: 10px;
+  left: 200px;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+#openwall #callforphoto .title {
+  font-size: 16px;
+}
+
+#openwall #btn_back a {
+  width: 135px; 
+  height: 128px; 
+  background: url(../images/btn_back.png) no-repeat; 
+  position: absolute; 
+  left: 45px; 
+  bottom: 60px;
+  text-indent: -9999px; 
+  display: block;
+}
+#openwall #btn_back a:hover {
+  filter:alpa(opacity=80);   /* old IE */
+  filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=80,FinishOpacity=15, Style=3, StartX=0, FinishX=100, StartY=0,FinishY=16); /*supported by current IE*/
+  -moz-opacity:0.7;          /* Moz + FF */
+  opacity:0.7;               /* 支持新版瀏覽器 */
+}
+
+
+#openwall #sharing {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: white;
+}
+
+#openwall #sharing li {
+  float: left;
+  margin-right: 8px;
+  font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+  font-size: 12px/18px;
+}
+
+#openwall #sharing li img {
+  vertical-align:middle;
+  width: 16px;
+  height: 16px;
+  margin-right: 2px;
+}
+
+#openwall #sharing li span {
+  display: none;
+}
+
+#openwall #sponsor {
+  margin: 0 auto;
+  min-height: 70px;
+  padding-top: 10px;
+  display: none;
+}
+
+#openwall #sponsor li {
+  float: left;
+  font-family: "微軟正黑體","Arial Unicode MS";
+  margin-right: 8px;
+}
+
+@media screen and (max-device-width: 360px), screen and (max-width: 360px) {
+  #openwall #panel-container {
+    width: 306px;
+  }
+  #openwall #logo a {
+    top: 0;
+    background: black url('../images/coscup.png') center center no-repeat;
+    width: 100%;
+  }
+
+  #openwall #callforphoto {
+    color: white;
+    position: relative;
+    left: 0px;
+    width: 100%;
+    padding: 20px 0;
+    font-size: 16px;
+  }
+
+  #openwall #callforphoto .title {
+    font-size: 20px;
+  }
+
+  #openwall #callforphoto .content {
+    display:none;
+  }
+
+ 	#openwall #btn_back a {
+    text-indent: 0; 
+    position: relative;
+    float: left;
+    height: 30px;
+    margin-bottom:8px;
+    background: #e0e0e0 url('../images/mobile/m_back.png') 30px no-repeat; 
+    bottom: 0;
+    left: 0;
+    color:#000; 
+    padding: 3px 0; 
+    text-align:center;
+    line-height:25px; 
+    display:block; 
+    text-decoration:none;
+    width: 100%;
+    font-size: 16px;
+  }
+ 	#openwall #btn_back a:hover {
+ 	  opacity: 1.0;
+  }
+
+  #openwall #sharing {
+    position: relative;
+    float: left;
+    margin-bottom: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    right: 0;
+    color: black;
+    background: #e0e0e0;
+  }
+
+  #openwall #sharing li {
+    border: 1px solid #999999;
+    float: left;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    width: 40%;
+    padding: 5px;
+  }
+
+  #openwall #sharing li span {
+    display: inline;
+    font-size: 12px;
+    padding-left: 2px;
+  }
+
+  #openwall #sharing li a {
+    text-decoration: none;
+  }
+
+  #openwall #sharing li.title {
+    border: medium none;
+    font-weight: bold;
+    margin-bottom: 12px;
+    margin-right: 8px;
+    width: 90%;
+    padding: 0;
+  }
+
+  #openwall #panel {
+    width: 306px;
+  }
+
+  #openwall li hr {
+    background-color: gray;
+    border: 0 none;
+    color: gray;
+    float: right;
+    height: 1px;
+    width: 60%;
+    display: block;
+  }
+  #openwall #panel #upper-border {
+    display: none;
+  }
+  #openwall #panel #lower-border {
+    display: none;
+  }
+}

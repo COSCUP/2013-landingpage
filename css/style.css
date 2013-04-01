@@ -10,16 +10,17 @@ fieldset,img { border: none; }
 --------------------------------------------------- */
 body {
 	font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif;
-	color:#000; background:url(../images/main.jpg) #f1f0ed center top no-repeat ;
+	overflow-x: hidden;
 	}
-.clear{ clear:both;}
+.clear { clear:both;}
 .m_main{ display:none}
-.sharing span{ display:none}
 
+#mainpage {
+	color:#000; 
+	background:url(../images/main.jpg) #f1f0ed center top no-repeat ;
+}
 
-/*------MAIL page-----*/
-
-.logo a{ 
+.logo a { 
 		width:90px; 
 		height:33px;
 		background:url(../images/logo.png) no-repeat;
@@ -28,16 +29,17 @@ body {
 		margin:10px 0 0 15px;
 		}
 
-.sharing{ 
+.sharing { 
 		position:absolute; 
 		right:15px; 
 		top:10px;
 		}
-	.sharing li{ 
+	.sharing li { 
 				float:left; 
 				margin-right:8px;
 				}
 	.sharing li.title hr{ display:none;}
+  .sharing span{ display:none}
 
 .cfa{
 	width:485px; 
@@ -66,15 +68,15 @@ body {
 				color:#fff;
 				}
 
-.btn_open{}
- 	.btn_open a{
+#btn_open{}
+ 	#btn_open a{
 				width:135px; 
 				height:128px; 
-				background:url(../images/btn_opne.png) no-repeat; 
+				background:url(../images/btn_open.png) no-repeat; 
 				position:absolute; right:10px; top:488px;
 				 text-indent:-9999px; display:block;
 				 }
-	.btn_open a:hover{
+	#btn_open a:hover{
 					filter:alpa(opacity=80);   /* old IE */
 					filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=80,FinishOpacity=15, Style=3, StartX=0, FinishX=100, StartY=0,FinishY=16); /*supported by current IE*/
 					-moz-opacity:0.7;          /* Moz + FF */
