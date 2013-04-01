@@ -1,0 +1,111 @@
+/* 重設
+--------------------------------------------------- */
+html,body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,p,blockquote,fieldset,input { margin: 0; padding: 0; }
+h1,h2,h3,h4,h5,h6,pre,code,address,caption,cite,code,em,th { font-size: 1em; font-weight: normal; font-style: normal; }
+abbr,acronym { border: 0; }
+ul,ol { list-style: none; }
+fieldset,img { border: none; }
+
+/* 基本
+--------------------------------------------------- */
+body {
+	font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif;
+	color:#000; background:url(../images/main.jpg) #f1f0ed center top no-repeat ;
+	}
+.clear{ clear:both;}
+.m_main{ display:none}
+.sharing span{ display:none}
+
+
+/*------MAIL page-----*/
+
+.logo a{ 
+		width:90px; 
+		height:33px;
+		background:url(../images/logo.png) no-repeat;
+		display:block; 
+		text-indent:-9999px; 
+		margin:10px 0 0 15px;
+		}
+
+.sharing{ 
+		position:absolute; 
+		right:15px; 
+		top:10px;
+		}
+	.sharing li{ 
+				float:left; 
+				margin-right:8px;
+				}
+	.sharing li.title hr{ display:none;}
+
+.cfa{
+	width:485px; 
+	margin:0 auto ;
+	padding-top:615px; 
+	padding-left:16px;
+	min-height:50px;
+	}
+	.cfa li{ 
+			width:224px; 
+			height:30px;
+			border:1px #000 solid; 
+			float:left; 
+			margin-right:15px;
+			}
+	.cfa li a{ 
+			color:#000; 
+			padding:3px; 
+			text-align:center;
+			line-height:25px; 
+			display:block; 
+			text-decoration:none;
+			}
+	.cfa li a:hover{ 
+				background:#000; 
+				color:#fff;
+				}
+
+.btn_open{}
+ 	.btn_open a{
+				width:135px; 
+				height:128px; 
+				background:url(../images/btn_opne.png) no-repeat; 
+				position:absolute; right:10px; top:488px;
+				 text-indent:-9999px; display:block;
+				 }
+	.btn_open a:hover{
+					filter:alpa(opacity=80);   /* old IE */
+					filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=80,FinishOpacity=15, Style=3, StartX=0, FinishX=100, StartY=0,FinishY=16); /*supported by current IE*/
+					-moz-opacity:0.7;          /* Moz + FF */
+					opacity:0.7;               /* 支持新版瀏覽器 
+					*/}
+
+.sponsor{ 
+		width:760px; 
+		min-height:80px;
+		margin:0 auto;
+		padding-top:80px;
+		}
+	.sponsor li{ 
+				font-size:13px;
+				font-family:"微軟正黑體", "Arial Unicode MS";
+				margin-right:8px;
+				float:left;
+				}
+	.sponsor li.title hr{ display:none;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
