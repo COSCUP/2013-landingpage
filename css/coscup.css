@@ -1,9 +1,9 @@
 .page {
+  position: absolute;
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
-  position: absolute;
   top: 0;
   left: 0;
   border: 0;
@@ -31,8 +31,8 @@
   background: black;
 }
 
-#openwall ul,ol { 
-  list-style: none; 
+#openwall ul,ol {
+  list-style: none;
 }
 #openwall.fallback {
   background: url("fallback-bg.jpg") left top no-repeat black;
@@ -118,13 +118,13 @@
 }
 
 #openwall #btn_back a {
-  width: 135px; 
-  height: 128px; 
-  background: url(../images/btn_back.png) no-repeat; 
-  position: absolute; 
-  left: 45px; 
+  width: 135px;
+  height: 128px;
+  background: url(../images/btn_back.png) no-repeat;
+  position: absolute;
+  left: 45px;
   bottom: 60px;
-  text-indent: -9999px; 
+  text-indent: -9999px;
   display: block;
 }
 #openwall #btn_back a:hover {
@@ -197,24 +197,24 @@
   }
 
   #openwall #callforphoto .content {
-    display:none;
+    display: none;
   }
 
  	#openwall #btn_back a {
-    text-indent: 0; 
+    text-indent: 0;
     position: relative;
     float: left;
     height: 30px;
-    margin-bottom:8px;
-    background: #e0e0e0 url('../images/mobile/m_back.png') 30px no-repeat; 
+    margin-bottom: 8px;
+    background: #e0e0e0 url('../images/mobile/m_back.png') 30px no-repeat;
     bottom: 0;
     left: 0;
-    color:#000; 
-    padding: 3px 0; 
-    text-align:center;
-    line-height:25px; 
-    display:block; 
-    text-decoration:none;
+    color: #000;
+    padding: 3px 0;
+    text-align: center;
+    line-height: 25px;
+    display: block;
+    text-decoration: none;
     width: 100%;
     font-size: 16px;
   }
