@@ -22,16 +22,14 @@ body {
 
 #mainpage {
 	color: #000;
-	background: url(../images/main.jpg) #f1f0ed center top no-repeat ;
+	background: url(../images/main.jpg) #f1f0ed center top no-repeat;
 }
 
-.logo a {
-  width: 90px;
-  height: 33px;
-  background: url(../images/logo.png) no-repeat;
-  display: block;
+.logo {
+  height: 40px;
+  background: transparent url('../images/coscup.png') 15px 5px no-repeat;
   text-indent: -9999px;
-  margin: 10px 0 0 15px;
+  z-index: 99;
 }
 
 .sharing {
@@ -48,8 +46,8 @@ body {
 
 .cfa {
 	width: 485px;
-	margin: 0 auto ;
-	padding-top: 615px;
+	margin: 0 auto;
+	padding-top: 585px;
 	padding-left: 16px;
 	min-height: 50px;
 }

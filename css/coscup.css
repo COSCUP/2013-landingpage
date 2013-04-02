@@ -20,7 +20,7 @@
 .page.current {
   transform: translateX(0);
   -webkit-transform: translateX(0);
-  overflow-y: scroll;
+  height: auto;
 }
 .page.next {
   transform: translateX(+100%);
@@ -50,14 +50,9 @@
 #openwall a {
   color: #369;
 }
-#openwall #logo a {
-  background: transparent url('../images/coscup.png') 0 0 no-repeat;
-  height: 33px;
-  width: 100%;
+#openwall .logo {
   position: absolute;
-  text-indent: -9999px;
-  top: 5px;
-  z-index: 99;
+  width: 100%;
 }
 
 #openwall li hr {
@@ -177,8 +172,7 @@
   #openwall #panel-container {
     width: 306px;
   }
-  #openwall #logo a {
-    top: 0;
+  #openwall .logo {
     background: black url('../images/coscup.png') center center no-repeat;
     width: 100%;
   }
