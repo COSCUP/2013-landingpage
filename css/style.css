@@ -67,7 +67,7 @@ body {
   display: block;
   text-decoration: none;
 }
-.cfa li a: hover {
+.cfa li a:hover {
   background: #000;
   color: #fff;
 }
@@ -79,7 +79,7 @@ body {
   position: absolute; right: 10px; top: 488px;
   text-indent: -9999px; display: block;
 }
-#btn_open a: hover {
+#btn_open a:hover {
   filter: alpa(opacity=80);   /* old IE */
   filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=80,FinishOpacity=15, Style=3, StartX=0, FinishX=100, StartY=0,FinishY=16); /*supported by current IE*/
   -moz-opacity: 0.7;          /* Moz + FF */
