@@ -118,6 +118,14 @@ jQuery(function ($) {
         $('#mainpage').toggle();
         $(this).toggle();
     });
+    $('#mainpage').bind('webkitTransitionEnd', function() {
+        $('#openwall').toggle();
+        $(this).toggle();
+    });
+    $('#openwall').hide().bind('webkitTransitionEnd', function() {
+        $('#mainpage').toggle();
+        $(this).toggle();
+    });
   } 
   $('#btn_open a').click(function(e) {
     e.preventDefault();
