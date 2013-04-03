@@ -15,8 +15,10 @@ fieldset,img { border: none; }
 /*--- site rule ---*/
 body {
 	font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif;
-	color:#000; background-color:#f1f0ed;
+	color:#000;
+	background-color:#f1f0ed;
 	overflow-x: hidden;
+	width: 100%;
 }
 	
 .clear { clear:both; }
