@@ -17,6 +17,7 @@ body {
   font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif;
   overflow-x: hidden;
   background-color: #f1f0ed;
+	color:#000;
 }
 .clear { clear:both; }
 .m_main { display: none }
@@ -99,3 +100,122 @@ body {
   float: left;
 }
 .sponsor li.title hr { display: none; }
+
+
+@media screen and (max-device-width: 360px), screen and (max-width: 360px) {
+  body {
+    width: 100%;
+  }
+  #mainpage {
+    background: none;
+  }
+  .m_main {
+    display: block;
+  }
+  .logo {
+    width: 100%;
+    background: url(../images/logo.png) no-repeat center;
+    display: block;
+    position: absolute;
+    top: 5px;
+  }
+  .sharing {
+    position: relative;
+    width: 95%;
+    float: left;
+    margin-left: 16px;
+    margin-bottom: 20px;
+    right: 0;
+  }
+  .sharing li.title {
+    width: 90%;
+    margin-right: 8px;
+    border: none;
+    font-weight: bold;
+    margin-bottom: 12px;
+  }
+  .sharing li.title hr {
+    display: block;
+    width: 65%;
+    float: right;
+    border: 0;
+    height: 1px;
+    background-color: #d4d4d4;	
+    color: #d4d4d4;	/* IE6 */
+  }
+  .sharing li {
+    width: 45%;
+    border: 1px #999 solid;
+    margin-bottom: 8px;
+  }
+  .sharing li img {
+    width: 16px;
+    vertical-align: middle;
+  }
+  .sharing li span {
+    display: inline;
+    margin-left: 5px;
+  }
+  .sharing li a {
+    padding: 5px;
+    line-height: 22px;
+    text-decoration: none;
+    color: #000;
+    padding-left: 12px;
+  }
+
+  .cfa {
+    width: 95%;
+    margin-bottom: 15px;
+    padding-top: 0;
+  }
+
+  .cfa li {
+    width: 95%;
+    margin-bottom: 8px;
+  }
+
+  #btn_open {
+    width: 90.5%;
+    margin-left: 16px;
+    border: 1px #000 solid;
+    float: left;
+    margin-bottom: 8px;
+  }
+
+  #btn_open a {
+    top: 0;
+    right: 0;
+    height: 30px;
+    width: auto;
+    color: #000;
+    text-align: center;
+    line-height: 30px;
+    display: block;
+    text-decoration: none;
+    background: url('../images/mobile/m_open.png') right no-repeat;
+    position: relative;
+    text-indent: 0;
+  }
+
+  .sponsor {
+    width: 95%;
+    margin-bottom: 20px;
+    margin-left: 16px;
+  }
+  .sponsor li.title {
+    width: 90%;
+    margin-right: 8px;
+    border: none;
+    font-weight: bold;
+    margin-bottom: 12px;
+  }
+  .sponsor li.title hr {
+    width: 70%;
+    float: right;
+    border: 0;
+    height: 1px;
+    background-color: #d4d4d4;	
+    color: #d4d4d4	/* IE6 */
+  }
+}
