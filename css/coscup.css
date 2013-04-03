@@ -14,8 +14,8 @@
   -o-transform: translateX(+100%);
   transition: transform .4s ease;
   -webkit-transition: -webkit-transform .4s ease;
-  -ms-transition: -webkit-transform .4s ease;
-  -o-transition: -webkit-transform .4s ease;
+  -ms-transition: -ms-transform .4s ease;
+  -o-transition: -o-transform .4s ease;
 }
 .page.previous {
   transform: translateX(-100%);
@@ -33,6 +33,8 @@
 .page.next {
   transform: translateX(+100%);
   -webkit-transform: translateX(+100%);
+  -ms-transform: translateX(+100%);
+  -o-transform: translateX(+100%);
 }
 
 #openwall {
