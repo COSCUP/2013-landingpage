@@ -83,7 +83,7 @@
         var defaultImg = (useDefault > letterIndex)? null : settings.defaultImage;
         var letterMask = settings.picMask[letter];
         var div = document.createElement('div');
-        div.classList.add('letterBlock');
+        $(div).addClass('letterBlock');
         var offset = letterIndex * letterMask.length * letterMask[0].length;
         fillPic(div, letterMask, offset, defaultImg);
         $(target).append(div);
@@ -110,13 +110,13 @@
           var img = document.createElement('img');
           var pos = Math.floor((i * cols + j) % settings.totalPicNumber);
           img.src = settings.imageDir + picNameList[pos] + '.jpg'; 
-          img.classList.add('thumbnail');
+          $(img).addClass('thumbnail');
           if (mask[i][j]) { 
             if (defaultImg) {
               img.src = defaultImg;
-              img.classList.add('default');
+              $(img).addClass('default');
             } else {
-              img.classList.add('highlight');
+              $(img).addClass('highlight');
             }
           }
           $(div).append(img);

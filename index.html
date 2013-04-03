@@ -38,13 +38,6 @@
   <link media="screen and (min-width:686px)" href="css/style.css" type="text/css" rel="stylesheet" />
   <link media="screen, handheld" href="css/coscup.css?0401" rel="stylesheet" type="text/css" />
 
-  <!--隱藏網址列-->
-  <script>
-    window.addEventListener("load", function() {  
-      setTimeout(function() {
-      window.scrollTo(0, 1); }, 10);
-    });
-  </script>
 </head>
 
 <body>
@@ -97,6 +90,10 @@
 <script type="text/javascript" src="jquery.openwall.js"></script>
 <script type="text/javascript">
 jQuery(function ($) {
+
+  <!-- hide browser address -->
+  //setTimeout(function() { window.scrollTo(0, 1); }, 10);
+
   if (navigator.userAgent.match(/(Android|iPhone|iPod|iPad|IEMobile|B2G)/)) {
     //XXX fallback plan?
   }
@@ -106,9 +103,13 @@ jQuery(function ($) {
     mobile: false
   };
 
-  var mq = window.matchMedia("(max-width: 360px)");
-  if (mq.matches)
-    options.mobile = true;
+  var sAgent = navigator.userAgent.toLowerCase();
+  if (sAgent.indexOf("msie") == -1 && !this.isIE) {
+    var mq = window.matchMedia("(max-width: 360px)");
+    if (mq.matches) {
+      options.mobile = true;
+    }
+  }
   $('#panel').openWall(options);
 
   $('#btn_open a').click(function(e) {

@@ -81,17 +81,30 @@
 
 #openwall #panel .thumbnail {
   width: 50px;
+  height: 50px;
   opacity: 0.1;
+  filter: alpha(opacity=10); /* IE 7 and Earlier */
+  /* Next 2 lines IE8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10);
   margin-left: 1px;
   margin-top: 1px;
 }
 
 #openwall #panel .default {
   opacity: 0.4;
+  filter: alpha(opacity=40); /* IE 7 and Earlier */
+  /* Next 2 lines IE8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
 }
 
 #openwall #panel .highlight {
   opacity: 1.0;
+  filter: alpha(opacity=100); /* IE 7 and Earlier */
+  /* Next 2 lines IE8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   border: none;
 }
 
@@ -131,10 +144,10 @@
   display: block;
 }
 #openwall #btn_back a:hover {
-  filter:alpa(opacity=80);   /* old IE */
-  filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=80,FinishOpacity=15, Style=3, StartX=0, FinishX=100, StartY=0,FinishY=16); /*supported by current IE*/
+  filter:alpa(opacity=70);   /* old IE */
+  filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=70,FinishOpacity=15, Style=3, StartX=0, FinishX=100, StartY=0,FinishY=16); /*supported by current IE*/
   -moz-opacity:0.7;          /* Moz + FF */
-  opacity:0.7;               /* 支持新版瀏覽器 */
+  opacity:0.7;
 }
 
 
@@ -223,6 +236,10 @@
   }
  	#openwall #btn_back a:hover {
  	  opacity: 1.0;
+    filter: alpha(opacity=100); /* IE 7 and Earlier */
+    /* Next 2 lines IE8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   }
 
   #openwall #sharing {
