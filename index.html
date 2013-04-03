@@ -113,13 +113,11 @@ jQuery(function ($) {
 
   $('#btn_open a').click(function(e) {
     e.preventDefault();
-    console.log('testQQ');
     $('#mainpage').removeClass('current').addClass('previous');
     $('#openwall').removeClass('next').addClass('current');
   });
   $('#btn_back a').click(function(e) {
     e.preventDefault();
-    console.log('testQQ2');
     $('#openwall').removeClass('current').addClass('next');
     $('#mainpage').removeClass('previous').addClass('current');
   });
