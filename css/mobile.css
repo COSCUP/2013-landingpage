@@ -61,7 +61,7 @@ body {
   border: 1px #000 solid;
   float: left;
   margin-bottom: 8px;
-  background: url('../images/mobile/m_open.jpg') right no-repeat;
+  background: url('../images/mobile/m_open.png') right no-repeat;
 }
 #btn_open a {
   color: #000;
