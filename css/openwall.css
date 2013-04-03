@@ -132,12 +132,12 @@
 }
 
 #openwall #btn_back a {
-  width: 135px;
-  height: 128px;
+  width: 62px;
+  height: 85px;
   background: url(../images/btn_back.png) no-repeat;
   position: absolute;
   left: 45px;
-  bottom: 60px;
+  bottom: 120px;
   text-indent: -9999px;
   display: block;
 }
