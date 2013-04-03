@@ -30,6 +30,7 @@
   <link rel="apple-touch-icon" sizes="114x114" href="coscup-icon-iphone4.png" />
 
   <!--[if IE 8]> <script type="text/javascript" src="css3-mediaqueries.js"></script><![endif]-->
+  <!--[if IE 8]><link href="css/ie8-fix.css" rel="stylesheet" type="text/css" /><![endif]-->
 
   <!--site css-->
   <link href="css/style.css" rel="stylesheet" type="text/css" />
@@ -56,7 +57,7 @@
   <div class="clear"></div>
 </div>
 
-<div id="openwall" class="page next">
+<div id="openwall" class="page">
   <div id="panel-container">
     <div class="logo"><a href="http://coscup.org/2013/">COSCUP2013</a></div>
     <div id="panel"></div>
@@ -112,11 +113,11 @@ jQuery(function ($) {
   $('#btn_open a').click(function(e) {
     e.preventDefault();
     $('#mainpage').removeClass('current').addClass('previous');
-    $('#openwall').removeClass('next').addClass('current');
+    $('#openwall').addClass('current');
   });
   $('#btn_back a').click(function(e) {
     e.preventDefault();
-    $('#openwall').removeClass('current').addClass('next');
+    $('#openwall').removeClass('current');
     $('#mainpage').removeClass('previous').addClass('current');
   });
 

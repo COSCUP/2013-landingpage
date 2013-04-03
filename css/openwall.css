@@ -12,6 +12,7 @@
   -webkit-transform: translateX(+100%);
   -ms-transform: translateX(+100%);
   -o-transform: translateX(+100%);
+
   transition: transform .4s ease;
   -webkit-transition: -webkit-transform .4s ease;
   -ms-transition: -ms-transform .4s ease;
@@ -22,6 +23,7 @@
   -webkit-transform: translateX(-100%);
   -ms-transform: translateX(-100%);
   -o-transform: translateX(-100%);
+
 }
 .page.current {
   transform: translateX(0);
@@ -29,12 +31,6 @@
   -ms-transform: translateX(0);
   -o-transform: translateX(0);
   height: auto;
-}
-.page.next {
-  transform: translateX(+100%);
-  -webkit-transform: translateX(+100%);
-  -ms-transform: translateX(+100%);
-  -o-transform: translateX(+100%);
 }
 
 #openwall {
