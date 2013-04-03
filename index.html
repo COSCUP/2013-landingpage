@@ -109,7 +109,16 @@ jQuery(function ($) {
     }
   }
   $('#panel').openWall(options);
-
+  if (options.mobile) {
+    $('#mainpage').bind('transitionend', function() {
+        $('#openwall').toggle();
+        $(this).toggle();
+    });
+    $('#openwall').hide().bind('transitionend', function() {
+        $('#mainpage').toggle();
+        $(this).toggle();
+    });
+  } 
   $('#btn_open a').click(function(e) {
     e.preventDefault();
     $('#mainpage').removeClass('current').addClass('previous');
