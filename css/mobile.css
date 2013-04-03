@@ -101,7 +101,11 @@ body {
   margin-right: 8px;
   margin-bottom: 8px;
 }
-.sharing li span { margin-right: 3px; }
+.sharing li img {
+  width: 16px;
+  vertical-align: middle;
+}
+.sharing li span { margin-left: 5px; }
 .sharing li a {
   padding: 5px;
   line-height: 22px;
