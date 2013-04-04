@@ -66,13 +66,37 @@
 }
 
 #openwall #panel-container {
-  width: 1225px;
+  width: 1275px;
   margin: 0 auto;
   position: relative;
 }
 
+#openwall #panel {
+  width: 100%;
+}
+#openwall #panel .main {
+  width: 969px;
+  display: inline-block;
+}
+
 #openwall #panel .letterBlock {
-  width: 306px;
+  width: 204px;
+  display: inline-block;
+  line-height: 0;
+}
+
+#openwall #panel .border {
+  line-height: 0;
+}
+
+#openwall #panel .sider {
+  width: 51px;
+  display: inline-block;
+  line-height: 0;
+}
+
+#openwall #panel .gap {
+  width: 51px;
   display: inline-block;
   line-height: 0;
 }
@@ -118,13 +142,13 @@
 #openwall #callforphoto {
   color: white;
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   width: 450px;
   background: black;
   padding: 10px;
   left: 200px;
   font-size: 12px;
-  line-height: 18px;
+  line-height: 16px;
 }
 
 #openwall #callforphoto .title {
@@ -188,9 +212,29 @@
   margin-right: 8px;
 }
 
+@media screen and (max-device-width: 1024px) and (min-device-width: 361px), 
+  screen and (max-width: 1024px) and (min-width: 361px) {
+  #openwall #panel-container {
+    width: 969px;
+  }
+  #openwall #panel .sider {
+    display: none;
+  }
+}
+
 @media screen and (max-device-width: 360px), screen and (max-width: 360px) {
   #openwall #panel-container {
     width: 306px;
+  }
+  #openwall #panel .main {
+    width: 204px;
+  }
+  #openwall #panel .gap {
+    display: none;
+  }
+  #openwall #panel .siderGroup {
+    width: 51px;
+    display: inline-block;
   }
   #openwall .logo {
     background: black url('../images/coscup.png') center center no-repeat;
@@ -293,10 +337,7 @@
     width: 60%;
     display: block;
   }
-  #openwall #panel #upper-border {
-    display: none;
-  }
-  #openwall #panel #lower-border {
+  #openwall #panel .border {
     display: none;
   }
 }
