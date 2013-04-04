@@ -109,33 +109,36 @@ jQuery(function ($) {
     }
   }
   $('#panel').openWall(options);
-  if (options.mobile) {
-    $('#mainpage').bind('transitionend', function() {
-        $('#openwall').toggle();
-        $(this).toggle();
-    });
-    $('#openwall').hide().bind('transitionend', function() {
-        $('#mainpage').toggle();
-        $(this).toggle();
-    });
-    $('#mainpage').bind('webkitTransitionEnd', function() {
-        $('#openwall').toggle();
-        $(this).toggle();
-    });
-    $('#openwall').hide().bind('webkitTransitionEnd', function() {
-        $('#mainpage').toggle();
-        $(this).toggle();
-    });
-  } 
-  $('#btn_open a').click(function(e) {
+
+  options.mobile && $('#openwall').hide(0);
+
+  function onButtonClick(e, nowPage, nextPage) {
     e.preventDefault();
-    $('#mainpage').removeClass('current').addClass('previous');
-    $('#openwall').addClass('current');
+    options.mobile && $(nextPage).show(0);
+    setTimeout(function() {
+      $(nowPage).removeClass('current');
+      if (nowPage === '#mainpage') {
+        $(nowPage).addClass('previous');
+      } else {
+        $(nextPage).removeClass('previous');
+      }
+      $(nextPage).addClass('current');
+
+      if (options.mobile) {
+        function onTransitionEnd() {
+          $(this).off().hide(0);
+        }
+        $(nowPage).on('transitionend', onTransitionEnd);
+        $(nowPage).on('webkitTransitionEnd', onTransitionEnd);
+      }
+    }, 10);
+  }
+
+  $('#btn_open a').click(function(e) {
+    onButtonClick(e, '#mainpage', '#openwall');
   });
   $('#btn_back a').click(function(e) {
-    e.preventDefault();
-    $('#openwall').removeClass('current');
-    $('#mainpage').removeClass('previous').addClass('current');
+    onButtonClick(e, '#openwall', '#mainpage');
   });
 
 });
