@@ -169,10 +169,6 @@
         $(siderGroup2).addClass('siderGroup');
         layoutSider(siderGroup2, 2);
         $(this).append(siderGroup2);
-
-        $('#callforphoto .title').click(function() {
-          $('#callforphoto .content').toggle('slow');
-        });
       }
     });
   };
