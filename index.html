@@ -92,10 +92,6 @@ jQuery(function ($) {
   <!-- hide browser address -->
   //setTimeout(function() { window.scrollTo(0, 1); }, 10);
 
-  if (navigator.userAgent.match(/(Android|iPhone|iPod|iPad|IEMobile|B2G)/)) {
-    //XXX fallback plan?
-  }
-
   var options = {
     imageDir: 'photo/',
     mobile: false
@@ -107,6 +103,11 @@ jQuery(function ($) {
       var mq = window.matchMedia("(max-width: 360px)");
       options.mobile = (mq.matches)? true: false;
     }
+    if (navigator.userAgent.match(/(Android|iPhone|iPod|iPad|IEMobile|B2G)/)) {
+      options.mobile = true;
+      //XXX fallback plan?
+    }
+
     $('#panel').empty().openWall(options);
   }
 
