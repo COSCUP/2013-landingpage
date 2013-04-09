@@ -24,7 +24,7 @@ body {
 
 #mainpage {
 	color: #000;
-	background: url(../images/main.jpg) #f1f0ed center top no-repeat;
+	background: url(../images/main.jpg) #f1f0ed center -30px no-repeat;
 }
 
 .logo {
@@ -34,10 +34,20 @@ body {
   z-index: 99;
 }
 
+
 .sharing {
   position: absolute;
   right: 15px;
   top: 10px;
+}
+
+#archives {
+  top: 18px;
+  font-size: 11px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 110px;
 }
 .sharing li {
   float: left;
@@ -49,7 +59,7 @@ body {
 .cfa {
 	width: 485px;
 	margin: 0 auto;
-	padding-top: 540px;
+	padding-top: 510px;
 	padding-left: 16px;
 	min-height: 50px;
 }
@@ -88,16 +98,18 @@ body {
 }
 
 .sponsor {
-  width: 760px;
-  min-height: 80px;
-  margin: 0 auto;
-  padding-top: 80px;
+  width: 100%;
+  text-align: center;
+  background-color: #f1f0ed; 
 }
 .sponsor li {
   font-size: 13px;
   font-family: "微軟正黑體", "Arial Unicode MS";
   margin-right: 8px;
-  float: left;
+  display: inline;
+}
+.sponsor li img {
+  vertical-align: middle;
 }
 .sponsor li.title hr { display: none; }
 
@@ -118,6 +130,15 @@ body {
     display: block;
     position: absolute;
     top: 5px;
+  }
+  #archives {
+    position: relative;
+    left: 20px;
+    width: 90%;
+    top: 0px;
+    font-size: 13px;
+    line-height: 20px;
+    padding-bottom: 10px;
   }
   .sharing {
     position: relative;
@@ -202,6 +223,7 @@ body {
     width: 95%;
     margin-bottom: 20px;
     margin-left: 16px;
+    text-align: left;
   }
   .sponsor li.title {
     width: 90%;
@@ -209,9 +231,11 @@ body {
     border: none;
     font-weight: bold;
     margin-bottom: 12px;
+    display: block;
   }
   .sponsor li.title hr {
-    width: 70%;
+    display: block;
+    width: 65%;
     float: right;
     border: 0;
     height: 1px;
