@@ -205,17 +205,8 @@
   display: none;
 }
 
-#openwall #sponsor {
-  margin: 0 auto;
-  min-height: 70px;
-  padding-top: 10px;
-  display: none;
-}
-
-#openwall #sponsor li {
-  float: left;
-  font-family: "微軟正黑體","Arial Unicode MS";
-  margin-right: 8px;
+#openwall .sponsor li.last {
+  display: inline;
 }
 
 @media screen and (max-device-width: 1024px) and (min-device-width: 361px), 
