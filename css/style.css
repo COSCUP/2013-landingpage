@@ -83,6 +83,20 @@ body {
   color: #fff;
 }
 
+
+
+#event_description {
+  padding-top: 0px;
+  margin-bottom: 15px;
+  width: 710px;
+	margin: 0 auto;
+  }
+  #event_description p{
+    margin-top: 15px;
+    font: 15px/20px "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif;
+}
+
+
 #btn_open a {
   width: 135px;
   height: 128px;
